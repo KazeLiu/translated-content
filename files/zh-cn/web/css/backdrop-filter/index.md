@@ -38,10 +38,51 @@ backdrop-filter: unset;
 
 ## 语法
 
-### 值
-
 - `none`
   - : 没有应用于背景的滤镜。
+
+- `inherit`
+  - : 继承父元素的 `backdrop-filter` 属性值。
+
+- `initial`
+  - : 将属性重置为其默认值（即 `none`）。
+
+- `revert`
+  - : 回退到元素的样式层叠层中之前设置的值（若无设置则等同于 `initial`）。
+
+- `unset`
+  - : 如果属性为继承属性，则表现为 `inherit`；否则表现为 `initial`。
+
+- `blur(<length>)`
+  - : 应用模糊效果。`<length>` 决定模糊半径，值越大模糊程度越强。单位通常为 `px`。
+
+- `brightness(<percentage>)`
+  - : 调整亮度。值为 `100%` 表示原始亮度，小于 `100%` 会变暗，大于 `100%` 会变亮。
+
+- `contrast(<percentage>)`
+  - : 调整对比度。`100%` 表示原始对比度，小于 `100%` 降低对比度，大于 `100%` 提高对比度。
+
+- `drop-shadow(<shadow>)`
+  - : 添加阴影效果。可以设置偏移量（如 `4px 4px`）、模糊半径（如 `10px`）以及颜色（如 `blue`）。
+
+- `grayscale(<percentage>)`
+  - : 应用灰度效果。`0%` 为全彩色，`100%` 转为完全灰色。
+
+- `hue-rotate(<angle>)`
+  - : 调整色相。`<angle>` 可以是度数（如 `120deg`），颜色会绕色环旋转指定角度。
+
+- `invert(<percentage>)`
+  - : 反转颜色。`0%` 保持原始颜色，`100%` 完全反转颜色。
+
+- `opacity(<percentage>)`
+  - : 设置透明度。`100%` 完全不透明，`0%` 完全透明。
+
+- `sepia(<percentage>)`
+  - : 应用深褐色滤镜，产生复古照片效果。`0%` 无效果，`100%` 完全应用效果。
+
+- `saturate(<percentage>)`
+  - : 调整饱和度。`100%` 保持原始饱和度，小于 `100%` 减少饱和度，大于 `100%` 增强饱和度。
+
 - `<filter-function-list>`
   - : 一个以空格分隔的滤镜函数（{{cssxref("&lt;filter-function&gt;")}}）或是要应用到背景上的 [SVG 滤镜](/zh-CN/docs/Web/SVG/Element/filter)。
 
